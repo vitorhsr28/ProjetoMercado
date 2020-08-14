@@ -1,38 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Mercado Arbyte</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <a href="#"><img class="" src="" alt=""></a>
+            <h1><a href="#"><img class="logo" src="./IMG/logo.png" alt="" width="150px"></a>
             </h1>
             <nav>
                 <ul>
-                    <li class=""><a href="#"></a></li>
-                    <li class=""><a href="#"></a></li>
-                    <li class=""><a href="#"></a></li>
+                    <li class="index"><a href="./index.html">Início</a></li>
+                    <li class="promocoes"><a href="#">Promoções</a></li>
+                    <li class="botaoComprar"><a href=""><img src="./IMG/shopping-cart-icon.png" alt="" width="40px">
+                    </li></a>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="box">
-                <div class="content">
-                    <img src="" alt="">
-                    <p class="nome"></p>
-                    <p class="preco"></p>
-                    <button class="botao"></button>
+
+    <div class="slider">
+        <div class="slidershow middle">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+
+                <div class="slide s1">
+                    <img src="./IMG/images/1.jpg" alt="">
                 </div>
+                <div class="slide">
+                    <img src="./IMG/images/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./IMG/images/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./IMG/images/4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./IMG/images/5.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
             </div>
         </div>
-    </main>
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
