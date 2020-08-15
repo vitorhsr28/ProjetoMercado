@@ -21,6 +21,18 @@
                     <li class="botaoComprar"><a href=""><img src="./IMG/shopping-cart-icon.png" alt="" width="40px">
                     </li></a>
                 </ul>
+                <div id="search_widget" class="search-widget hidden-sm-down" data-search-controller-url="index">
+                    <div class="toggle-search"><i class="fa fa-search"></i></div>
+                    <form method="get" action="index.html"
+                        id="_desktop_search">
+                        <input type="hidden" name="controller" value="search">
+                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" name="s" value=""
+                            placeholder="Procurar" class="ui-autocomplete-input" autocomplete="off">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
             </nav>
         </div>
     </header>
@@ -62,6 +74,7 @@
     </div>
 
     <script src="./index.js"></script>
+
 </body>
 
 </html>
