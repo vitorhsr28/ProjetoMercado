@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style-cards.css">
     <title>Mercado Arbyte</title>
 </head>
 
 <body>
-    <header class="header">
+  <header class="header">
         <div class="container">
             <h1><a href="#"><img class="logo" src="./IMG/logo.png" alt="" width="150px"></a>
             </h1>
@@ -18,14 +18,14 @@
                 <ul>
                     <li class="index"><a href="./index.html">Início</a></li>
                     <li class="promocoes"><a href="#">Promoções</a></li>
-                    <li class="botaoComprar"><a href=""><img src="./IMG/shopping-cart-icon.png" alt="" width="40px">
+                    <li class="botaoComprar"><a href="">
                     </li></a>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="slider">
+  <div class="slider">
         <div class="slidershow middle">
             <div class="slides">
                 <input type="radio" name="r" id="r1" checked>
@@ -51,17 +51,41 @@
                 </div>
 
             </div>
-            <div class="navigation">
-                <label for="r1" class="bar"></label>
-                <label for="r2" class="bar"></label>
-                <label for="r3" class="bar"></label>
-                <label for="r4" class="bar"></label>
-                <label for="r5" class="bar"></label>
-            </div>
+           
         </div>
     </div>
 
-    <script src="./index.js"></script>
+
+
+    <div class="modelos">
+        <div class="mercado-item">
+            <a href="">
+                <div class="mercado-item--img"><img src="" /></div>
+                <div class="mercado-item--add">+</div>
+            </a>
+            <div class="mercado-item--price">R$ --</div>
+            <div class="mercado-item--name">--</div>
+            <div class="mercado-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+   
+    <main>
+        <h1></h1>
+        <div class="mercado-area"></div>
+    </main>
+
+
+    <script type="text/javascript" src="db.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
