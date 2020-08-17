@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="style-cards.css">
+    <link rel="stylesheet" href="./slider.css">
     <title>Mercado Arbyte</title>
 </head>
 
 <body>
-  <header class="header">
+    <header class="header">
         <div class="container">
             <h1><a href="#"><img class="logo" src="./IMG/logo.png" alt="" width="150px"></a>
             </h1>
@@ -24,39 +27,14 @@
             </nav>
         </div>
     </header>
-
-  <div class="slider">
-        <div class="slidershow middle">
-            <div class="slides">
-                <input type="radio" name="r" id="r1" checked>
-                <input type="radio" name="r" id="r2">
-                <input type="radio" name="r" id="r3">
-                <input type="radio" name="r" id="r4">
-                <input type="radio" name="r" id="r5">
-
-                <div class="slide s1">
-                    <img src="./IMG/images/1.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./IMG/images/2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./IMG/images/3.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./IMG/images/4.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./IMG/images/5.jpg" alt="">
-                </div>
-
-            </div>
-           
-        </div>
+    <div id="slider">
+        <figure>
+            <img src="IMG/images/1.jpg" alt="">
+            <img src="IMG/images/2.jpg" alt="">
+            <img src="IMG/images/3.jpg" alt="">
+            <img src="IMG/images/1.jpg" alt="">
+        </figure>
     </div>
-
-
-
     <div class="modelos">
         <div class="mercado-item">
             <a href="">
@@ -77,13 +55,12 @@
             </div>
         </div>
     </div>
-   
     <main>
         <h1></h1>
         <div class="mercado-area"></div>
     </main>
 
-
+    <script src="slider.js"></script>
     <script type="text/javascript" src="db.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
