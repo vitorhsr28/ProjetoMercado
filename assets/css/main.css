@@ -5,7 +5,8 @@ body{
 header{
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 250px;
+    background: #032126;
 
 }
 .container{
@@ -44,24 +45,71 @@ nav a {
     padding:15px;
     text-decoration:none;
     text-transform: uppercase;
-    color:#727272;
+    color:#ffffff;
     font-family: Arial;
 }
 
 nav .active a,
 nav a:hover{
-    background-color:#39aae1;
-    color: #ffffff;
+    background-color:#C8FF00;
+    color: #000000;
 }
 
 #banner{
     display:flex;
     justify-content: center;
-    background-image:url('../img/img1.jpg') ;
+    background-image:url('../img/1.jpg') ;
+    background-image:url('../img/2.jpg') ;
+    background-image:url('../img/3.jpg') ;
     background-position: center;
     background-size:cover;
     height:670px;
+}
+#banner {
+    overflow: hidden;
+}
 
+#banner figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#banner figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
 }
 
 .column{
@@ -113,17 +161,25 @@ nav a:hover{
     padding:20px;
 }
 
+
 .banner1{
-    background-color:#39aae1;
+    background-color:#032126;
 }
 
 .banner2{
-    background-color:#0079c7;
+    background-color:#06363f;
 }
 
 .banner3{
-    background-color:#2b4c99;
+    background-color:#055361;
 }
+.banner1:hover,
+.banner2:hover,
+.banner3:hover {
+    background: #C8FF00;
+    color: #000000;
+}
+
 .banner-title{
     font-family: Arial;
 }
