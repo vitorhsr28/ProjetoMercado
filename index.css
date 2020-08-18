@@ -1,10 +1,14 @@
-
-
+@import url('https: //fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
 body {
     min-height: 100vh;
     flex-direction: column;
 }
-
 
 .logo {
     display: flex;
@@ -17,7 +21,6 @@ body {
 
 header {
     padding: 30px 0 5px 0;
-    
 }
 
 nav {
@@ -48,7 +51,7 @@ nav a {
 
 .middle {
     position: absolute;
-    top: 10px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -109,9 +112,4 @@ input[name="r"] {
 }
 #r5:checked ~ .s1{
     margin-left: -80%;
-}
-#footer {
-    width: 120px;
-    height: 80px;
-    background-color: green;
 }
