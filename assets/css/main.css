@@ -6,8 +6,8 @@ body {
 header {
     display: flex;
     justify-content: center;
-    height: 250px;
-    background: #032126;
+    height: 100px;
+    background: #14213D;
 }
 
 .container {
@@ -46,7 +46,7 @@ nav a {
 }
 
 nav .active a, nav a:hover {
-    background-color: #C8FF00;
+    background-color: #ffffff;
     color: #000000;
 }
 
@@ -121,4 +121,8 @@ nav .active a, nav a:hover {
 
 .banner-title {
     font-family: Arial;
+}
+
+#cards{
+    background-color:#ffffff;
 }
