@@ -10,14 +10,9 @@ header {
     
     display: flex ;
     justify-content: center;
-<<<<<<< HEAD
-    height: 100px;
-    background: #14213D;
-=======
     height: 250px;
     background: #055361;
     
->>>>>>> 1457523d9d44c1dd6cfca05d4eec3e5f64958bb3
 }
 
 .container {
@@ -55,10 +50,6 @@ nav ul {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-nav .active a, nav a:hover {
-    background-color: #ffffff;
-=======
 .dropdown {
     float: left;
     overflow: hidden;
@@ -79,7 +70,6 @@ nav .active a, nav a:hover {
 
 nav .active a, nav a:hover, .dropdown:hover .dropbtn {
     background-color: #C8FF00;
->>>>>>> 1457523d9d44c1dd6cfca05d4eec3e5f64958bb3
     color: #000000;
 }
 
@@ -196,15 +186,4 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
 .banner1:hover, .banner2:hover, .banner3:hover {
     background: #C8FF00;
     color: #000000;
-<<<<<<< HEAD
-}
-
-.banner-title {
-    font-family: Arial;
-}
-
-#cards{
-    background-color:#ffffff;
-=======
->>>>>>> 1457523d9d44c1dd6cfca05d4eec3e5f64958bb3
 }

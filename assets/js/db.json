@@ -1,5 +1,5 @@
 {
-  "mercado": [
+  "mercado":[
     {
       "id": 1, 
       "name": "Coca Cola", 
@@ -9,18 +9,33 @@
     },
     { 
       "id": 2, 
-      "name": "Coca Cola", 
+      "name": "Coca Zero", 
       "img": "assets/img/coca-cola.png",
       "price": 20.19, 
       "description": "Bem Geleda"
     },    
     { 
       "id": 3, 
-      "name": "Coca Cola", 
+      "name": "Coca Um", 
+      "img": "assets/img/coca-cola.png",
+      "price": 20.19, 
+      "description": "Bem Geleda"
+    },
+    { 
+      "id": 4, 
+      "name": "Coca Um", 
+      "img": "assets/img/coca-cola.png",
+      "price": 20.19, 
+      "description": "Bem Geleda"
+    },
+    { 
+      "id": 5, 
+      "name": "Coca Um", 
       "img": "assets/img/coca-cola.png",
       "price": 20.19, 
       "description": "Bem Geleda"
     }
+
   ]    
 }
     
