@@ -190,4 +190,5 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
 footer {
     color: white;
     background: #032126;
+    justify-content: center;
 }
