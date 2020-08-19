@@ -125,3 +125,7 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
 .card p{
     padding: 5px;
 }
+.card .box:hover {
+    border: #229b5e solid;
+    border-radius: 30px;
+}
