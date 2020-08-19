@@ -13,7 +13,6 @@ axios.get('http://localhost:3000/mercado')
        let formatado  = []
        formatado.push(produtosApi)
 
-
        formatado.map((item) =>{
            let mercadoItem = c('.models .mercado-item').cloneNode(true);
 
