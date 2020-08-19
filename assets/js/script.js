@@ -1,18 +1,34 @@
-const c = (el)=>document.querySelector(el);
-const cs = (el)=>document.querySelectorAll(el);
+const axios = require('axios')
 
+axios.get('http://localhost:3000/mercado')
 
+.then(res => { 
+    let produtos = (res.data)
 
-mercadoJson.map((item, index)=>{
+    for(let i = 0; i <= produtos.length; i++){
 
-    let mercadoItem = c('.modelos .mercado-item').cloneNode(true);
+        console.log(produtos[i])
+
     
-    mercadoItem.querySelector('.mercado-item--img img').src = item.img;
-    mercadoItem.querySelector('.mercado-item--price').innerHTML = `R$ ${item.price.toFixed(2)}`
-    mercadoItem.querySelector('.mercado-item--name').innerHTML = item.name;
-    mercadoItem.querySelector('.mercado-item--desc').innerHTML = item.description;
+    }
+ })
 
-    c('.mercado-area').append( mercadoItem);
+ .catch(err => {
+     console.log('Erro ' +err)
+ })
 
 
-})
+/* 
+ mercadoJson.map((item)=>{
+
+    let resultadoitem = c('.modelos .mercado-item').cloneNode(true);
+    
+    resultadoitem.querySelector('.mercado-item--img img').src = item.img;
+    resultadoitem.querySelector('.mercado-item--price').innerHTML = `R$ ${item.price.toFixed(2)}`
+    resultadoitem.querySelector('.mercado-item--name').innerHTML = item.name;
+    resultadoitem.querySelector('.mercado-item--desc').innerHTML = item.description;
+
+    c('.mercado-area').append( resultadoitem);
+
+
+})  */
