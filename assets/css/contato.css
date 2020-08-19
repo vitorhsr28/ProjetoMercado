@@ -129,3 +129,7 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
     border: #229b5e solid;
     border-radius: 30px;
 }
+footer {
+    color: white;
+    background: #032126;
+}
