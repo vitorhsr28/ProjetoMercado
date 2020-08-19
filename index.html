@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style-cards.css">
+    
     <title>Mercado</title>
 </head>
 
@@ -66,6 +69,41 @@
 
     </section>
 
+    <section>
+
+        <div class="models">
+            <div class="mercado-item">
+                <a class="mercado-link" href="">
+                    <div class="mercado-item--img"><img src="" /></div>
+                    <div class="mercado-item--add">+</div>
+                </a>
+                <div class="mercado-item--price">R$ --</div>
+                <div class="mercado-item--name">--</div>
+                <div class="mercado-item--desc">--</div>
+            </div>
+            <div class="cart--item">
+                <img src="" />
+                <div class="cart--item-nome">--</div>
+                <div class="cart--item--qtarea">
+                    <button class="cart--item-qtmenos">-</button>
+                    <div class="cart--item--qt">1</div>
+                    <button class="cart--item-qtmais">+</button>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="menu-openner"><span>0</span>🛒</div>
+        </header>
+        <main>
+            <h1>Mercado</h1>
+            <div class="mercado-area"></div>
+        </main>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/db.json"></script>
+    <script src="assets/js/db.js"></script>
 </body>
 
 </html>

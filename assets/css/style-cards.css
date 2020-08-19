@@ -1,0 +1,131 @@
+.models {
+    display:none;
+}
+
+
+
+header {
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    height:60px;
+    background-color:#032126;
+    display:none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.menu-openner {
+    margin-right: 15px;
+    font-size: 26px;
+    background-color: #a9dcff;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+
+.menu-openner span {
+    margin-right:10px;
+}
+.menu-closer {
+    width:32px;
+    height:32px;
+    display:none;
+    font-size: 30px;
+}
+
+aside {
+    background-color:#9ccbe6;
+    width:0vw;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    transition:all ease .2s;
+    overflow-x:hidden;
+}
+aside.show {
+    width:30vw;
+}
+.cart--area {
+    padding:20px;
+}
+main {
+    flex:1;
+    padding:20px;
+}
+h1 {
+    font-family:'Hepta Slab', Helvetica, Arial;
+}
+.mercado-area {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.mercado-item {
+    text-align: center;
+    max-width:250px;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    margin:0 auto 50px auto;
+}
+.mercado-item a {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-decoration: none;
+}
+.mercado-item--img {
+    width:200px;
+    height:200px;
+    background-color:#EEE;
+    border-radius:100px;
+    box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
+}
+.mercado-item--img img {
+    width:100%;
+    height:auto;
+}
+.mercado-item--add {
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:25px;
+    background-color:#032126;
+    text-align:center;
+    color:#FFF;
+    font-size:22px;
+    cursor:pointer;
+    margin-top:-25px;
+    transition:all ease .2s;
+}
+.mercado-item a:hover .mercado-item--add {
+    background-color:#244c88;
+}
+.mercado-item--price {
+    font-size:15px;
+    color:#333;
+    margin-top:5px;
+}
+.mercado-item--name {
+    font-size:20px;
+    font-weight: bold;
+    color:#000;
+    margin-top:5px;
+}
+.mercado-item--desc {
+    font-size:13px;
+    color:#555;
+    margin-top:10px;
+}
+
+.mercadoWindowArea {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+}

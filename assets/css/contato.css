@@ -96,9 +96,9 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
     position: relative;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: minmax(100px, auto);
-    margin: 30px;
+    margin: 40px;
     grid-auto-flow: dense;
     gap: 10px;
 }
