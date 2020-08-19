@@ -1,131 +1,187 @@
-body{
-    margin:0;
-    padding:0;
+@import url('https: //fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
-    height: 100px;
-
+    height: 250px;
+    background: #032126;
 }
-.container{
-    display:flex;
+
+.container {
+    display: flex;
     justify-content: space-between;
-    width:990px;
-
+    width: 990px;
 }
 
-.logo{
-
+.logo {
     display: flex;
     align-items: center;
-
 }
 
-.menu{
-  display: flex;
-  align-items:center;
-
+.navbar {
+    display: flex;
+    align-items: center;
 }
-nav ul,
-nav li{
-    list-style:none;
-    margin:0;
-    padding:0;
 
+nav ul, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
     display: flex;
 }
 
-nav a {
-    display:flex;
-    padding:15px;
-    text-decoration:none;
-    text-transform: uppercase;
-    color:#727272;
-    font-family: Arial;
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav .active a,
-nav a:hover{
-    background-color:#39aae1;
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+nav .active a, nav a:hover, .dropdown:hover .dropbtn {
+    background-color: #C8FF00;
+    color: #000000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #06363f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
     color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-#banner{
-    display:flex;
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#banner {
+    display: flex;
     justify-content: center;
-    background-image:url('../img/img1.jpg') ;
-    background-position: center;
-    background-size:cover;
-    height:670px;
-
+    width: 100%;
+    height: 700px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: banner 10s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(../img/1.jpg);
 }
 
-.column{
+@keyframes banner {
+    0% {
+        background-image: url('../img/1.jpg')
+    }
+    25% {
+        background-image: url('../img/2.jpg')
+    }
+    50% {
+        background-image: url('../img/3.jpg')
+    }
+    75% {
+        background-image: url('../img/1.jpg')
+    }
+    100% {
+        background-image: url('../img/2.jpg')
+    }
+}
+
+.column {
     flex-direction: column;
 }
 
-.banner-headline,
-.banner-options{
-    font-family: Arial;
-    color:#ffffff;
+.banner-headline, .banner-options {
+    color: #ffffff;
     text-shadow: 0px 1px 0px #555555;
-
 }
 
-.banner-headline{
-    flex:1;
+.banner-headline {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
+
 .banner-headline h1 {
-    margin:0;
-    padding:0;
-    font-size:70px;
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
     max-width: 350px;
-}
-.banner-headline h2 {
-    margin:0;
-    padding:0;
-    font-size:21px;
-    max-width: 350px;
-    margin-top:30px;
+    text-shadow: 5px 5px 5px #000;
 }
 
-.banner-options{
-    
+.banner-headline h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    max-width: 350px;
+    margin-top: 30px;
+    text-shadow: 4px 4px 04px #000;
+}
+
+.banner-options {
     height: 210px;
     display: flex;
-
-
-
 }
-.banner1,
-.banner2,
+
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #032126;
+}
+
+.banner2 {
+    background-color: #06363f;
+}
+
 .banner3 {
-    flex:1;
-    color:#ffffff;
-    padding:20px;
+    background-color: #055361;
 }
 
-.banner1{
-    background-color:#39aae1;
+.banner1:hover, .banner2:hover, .banner3:hover {
+    background: #C8FF00;
+    color: #000000;
 }
-
-.banner2{
-    background-color:#0079c7;
-}
-
-.banner3{
-    background-color:#2b4c99;
-}
-.banner-title{
-    font-family: Arial;
-}
-
-
