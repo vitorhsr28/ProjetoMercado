@@ -23,7 +23,7 @@ nav {
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
     text-transform: uppercase;
     font-size: 18px;
@@ -33,4 +33,8 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+}
+footer {
+    color: white;
+    background: #032126;
 }

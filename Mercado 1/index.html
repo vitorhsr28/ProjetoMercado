@@ -28,7 +28,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="#">Visualizar Carrinho</a>
-                          <a class="dropdown-item" href="#">Finalizar Compra</a>
+                          <a class="dropdown-item" href="pagamento.html">Finalizar Compra</a>
                         </div>
                       </li>
                     <li class="botaoComprar"><a href="">
@@ -77,6 +77,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>
+    let $lista = document.querySelector("#mercado-item"); // Lista de produtos
+    let $produto = document.querySelector("#Produtos");  // ID do conjunto de produtos
+    let $botao = document.querySelector("#btn"); // botão de comprar
+
+    $botao.addEventListener('click', => {
+        var item = $produto.value;  
+        $lista.innerHTML += item;
+        alert(item)
+    })
+
+</script>
 <footer class="page-footer font-small green">
     <div class="footer-copyright text-center py-3">© 2020 Copyright
     </div>
