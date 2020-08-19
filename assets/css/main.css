@@ -9,7 +9,7 @@
 .menu {
     display: flex;
     justify-content: center;
-    height: 160px;
+    height: 180px;
     background: #032126;
 }
 
@@ -184,9 +184,4 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
 .banner1:hover, .banner2:hover, .banner3:hover {
     background: #C8FF00;
     color: #000000;
-}
-footer {
-    color: white;
-    background: #032126;
-    justify-content: center;
 }
