@@ -1,4 +1,4 @@
-
+@import url('https: //fonts.googleapis.com/css2?family=Rubik&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +6,11 @@
     font-family: 'Rubik', sans-serif;
 }
 
-header {
-    
-    display: flex ;
+.menu {
+    display: flex;
     justify-content: center;
     height: 250px;
-    background: #055361;
-    
+    background: #032126;
 }
 
 .container {
