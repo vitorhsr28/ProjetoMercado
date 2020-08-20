@@ -13,14 +13,29 @@ axios.get('http://localhost:3000/mercado')
        let formatado  = []
        formatado.push(produtosApi)
 
-       formatado.map((item) =>{
+       formatado.map((item, id) =>{
            let mercadoItem = c('.models .mercado-item').cloneNode(true);
 
+            mercadoItem.setAttribute('data-key', id);
             mercadoItem.querySelector('.mercado-item--name').innerHTML = item.name
             mercadoItem.querySelector('.mercado-item--price').innerHTML = `R$: ${item.price.toFixed(2)}`   
             mercadoItem.querySelector('.mercado-item--desc').innerHTML = item.description
             mercadoItem.querySelector('.mercado-item--img img').src = item.img
+            mercadoItem.querySelector('.mercado-link').addEventListener('click', (e)=>{
+                e.preventDefault();
+
+                c('.mercadoWindowArea').style.opacity = 0;
+                c('.mercadoWindowArea').style.display= 'flex';
+                setTimeout(()=>{
+                    c('.mercadoWindowArea').style.opacity = 1;
+
+                },200)
+                
+
+            });
+
             c('.mercado-area').append(mercadoItem);
+
 
        })
     }
