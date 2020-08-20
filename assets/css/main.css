@@ -185,3 +185,8 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
     background: #C8FF00;
     color: #000000;
 }
+footer {
+    color: white;
+    background: #032126;
+    text-align: center;
+}

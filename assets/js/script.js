@@ -70,18 +70,27 @@ axios.get('http://localhost:3000/mercado')
      console.log('Erro => ' +err)
  })
 
+ const url = "​https://api.postmon.com.br/v1/cep/"
+ 
+ let botao = document.getElementById("buscaCEP")
 
+botao.addEventListener('click', ()=> {
+    let cepDigitado = document.getElementById("cep")
+    buscaEndereco(cepDigitado.value)
+})
 
+ function buscaEndereco(cep){
+     console.log("Buscando informações do endereço para o cep: " + cep + "...")
+ 
+     const urlComCep = `https://api.postmon.com.br/v1/cep/${cep}`
+ axios.get(urlComCep)
+     .then(res => {
+         console.log(res)
+         let frete = res.data.bairro === "Jardim Sônia Maria" ? 1 : 1.2
+         console.log(frete * 25)
+     })
+     .catch(err => {
+         alert('Esse CEP nao existe' + err)
+     })
+ }
 
-/*  class formatadoApi {
-    constructor({id, name, price, img, description}){
-        this.id = id
-        this.name = name
-        this.price = price
-        this.img = img
-        this.description = description
-       
-        console.log(formatado)
-    }
-}
- */
