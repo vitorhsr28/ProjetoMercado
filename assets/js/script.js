@@ -1,5 +1,7 @@
 const c = el => document.querySelector(el);
 const cs = el => document.querySelector(el);
+let cart = [];
+let modalKey = 0;
 
 axios.get('http://localhost:3000/mercado')
 
@@ -23,6 +25,7 @@ axios.get('http://localhost:3000/mercado')
             mercadoItem.querySelector('.mercado-item--img img').src = item.img
             mercadoItem.querySelector('.mercado-link').addEventListener('click', (e)=>{
                 e.preventDefault();
+                modalKey = key;
 
                 c('.mercadoWindowArea').style.opacity = 0;
                 c('.mercadoWindowArea').style.display= 'flex';
@@ -39,6 +42,12 @@ axios.get('http://localhost:3000/mercado')
 
        })
     }
+ })
+ c('.mercadoInfo--addButton').addEventListener('click', ()=> {
+     cart.push({
+         id:db.js[modalKey].id,
+         qt:modalQt
+     })
  })
  
  .catch(err => {
