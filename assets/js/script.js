@@ -45,7 +45,7 @@ axios.get('http://localhost:3000/mercado')
  })
  c('.mercadoInfo--addButton').addEventListener('click', ()=> {
      cart.push({
-         id:db.js[modalKey].id,
+         id:formatado[modalKey].id,
          qt:modalQt
      })
  })
