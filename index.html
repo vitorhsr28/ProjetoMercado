@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style-cards.css">
+
     <title>Mercado</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="menu">
         <div class="container">
             <div class="logo">
-                <a href="./index.html">
-                    <img src="assets/img/logo.png" width="150px">
+                <a href="#">
+                    <img src="assets/img/logo.png" width="100px">
                 </a>
             </div>
             <div class="navbar">
@@ -33,6 +36,7 @@
                                     <a href="#">TEST2</a>
                                     <a href="#">TEST3</a>
                                 </div>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -49,15 +53,15 @@
             </div>
             <div class="banner-options">
                 <div class="banner1">
-                    <div class="banner-title">Emergency Case</div>
+                    <div class="banner-title">Açougue</div>
 
                 </div>
                 <div class="banner2">
-                    <div class="banner-title">Doctors Timetable</div>
+                    <div class="banner-title">Refrigerantes</div>
 
                 </div>
                 <div class="banner3">
-                    <div class="banner-title">Opening Hours</div>
+                    <div class="banner-title">Frutas</div>
 
                 </div>
 
@@ -66,6 +70,45 @@
 
     </section>
 
+    <section>
+
+        <div class="models">
+            <div class="mercado-item">
+                <a class="mercado-link" href="">
+                    <div class="mercado-item--img"><img src="" /></div>
+                    <div class="mercado-item--add">+</div>
+                </a>
+                <div class="mercado-item--price">R$ --</div>
+                <div class="mercado-item--name">--</div>
+                <div class="mercado-item--desc">--</div>
+            </div>
+            <div class="cart--item">
+                <img src="" />
+                <div class="cart--item-nome">--</div>
+                <div class="cart--item--qtarea">
+                    <button class="cart--item-qtmenos">-</button>
+                    <div class="cart--item--qt">1</div>
+                    <button class="cart--item-qtmais">+</button>
+                </div>
+            </div>
+        </div>
+        <header class="header-produtos">
+            <div class="menu-openner"><span>0</span>🛒</div>
+        </header>
+        <main>
+            <h1>Mercado</h1>
+            <div class="mercado-area"></div>
+        </main>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/db.json"></script>
+    <script src="assets/js/db.js"></script>
+    <footer class="page-footer font-small green">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright
+        </div>
+    </footer>
 </body>
 
 </html>

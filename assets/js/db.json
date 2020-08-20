@@ -1,0 +1,46 @@
+{
+  "mercado":[
+    {
+      "id": 1, 
+      "name": "Coca Cola", 
+      "img": "assets/img/coca-cola.png",
+      "price": 20.19, 
+      "description": "Bem Gelada"
+    },
+    { 
+      "id": 2, 
+      "name": "Coca Zero", 
+      "img": "assets/img/coca-cola.png",
+      "price": 20.19, 
+      "description": "Bem Gelada"
+    },    
+    { 
+      "id": 3, 
+      "name": "Coca Um", 
+      "img": "assets/img/coca-cola.png",
+      "price": 20.19, 
+      "description": "Bem Gelada"
+    },
+    { 
+      "id": 4, 
+      "name": "Coca Um", 
+      "img": "assets/img/coca-cola.png",
+      "price": 20.19, 
+      "description": "Bem Gelada"
+    },
+    { 
+      "id": 5, 
+      "name": "Coca Um", 
+      "img": "assets/img/coca-cola.png",
+      "price": 20.19, 
+      "description": "Bem Gelada"
+    }
+
+  ]    
+}
+    
+
+  
+
+
+

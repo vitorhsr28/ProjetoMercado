@@ -6,10 +6,10 @@
     font-family: 'Rubik', sans-serif;
 }
 
-header {
+.menu {
     display: flex;
     justify-content: center;
-    height: 250px;
+    height: 180px;
     background: #032126;
 }
 
