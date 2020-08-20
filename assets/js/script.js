@@ -34,6 +34,8 @@ axios.get('http://localhost:3000/mercado')
             //addEventListener() registra uma única espera de evento em um único alvo
             mercadoItem.querySelector('.mercado-link').addEventListener('click', (e)=>{
                 e.preventDefault();
+                
+                modalQt = 1;
 
                let key = e.target.closest('.mercado-item').getAttribute('data-key')
 
@@ -41,6 +43,8 @@ axios.get('http://localhost:3000/mercado')
                c('.mercadoInfo--desc').innerHTML = formatado[key].description
                c('.mercadoBig img').src = formatado [key].img;
                c('.mercadoInfo--actualPrice').innerHTML = `R$: ${formatado[key].price.toFixed(2)}` 
+
+               c('.mercadoInfo--qt').innerHTML = modalQt;
                
                 
 
