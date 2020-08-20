@@ -1,46 +1,108 @@
 {
-  "mercado":[
+  "mercado": [
     {
-      "id": 1, 
-      "name": "Coca Cola", 
-      "img": "assets/img/coca-cola.png",
-      "price": 20.19, 
+      "id": 1,
+      "name": "Bolo Integral",
+      "img": "assets/img/produtos/bolo.png",
+      "price": 8.00,
+      "description": "A unidade"
+    },
+    {
+      "id": 2,
+      "name": "Baguete",
+      "img": "assets/img/produtos/pao.png",
+      "price": 2.00,
+      "description": "A unidade"
+    },
+    {
+      "id": 3,
+      "name": "Pão de leite",
+      "img": "assets/img/produtos/pao-de-leite.png",
+      "price": 0.50,
+      "description": "A unidade"
+    },
+    {
+      "id": 4,
+      "name": "Coca Cola",
+      "img": "assets/img/produtos/coca-cola.png",
+      "price": 3.00,
       "description": "Bem Gelada"
     },
-    { 
-      "id": 2, 
-      "name": "Coca Zero", 
-      "img": "assets/img/coca-cola.png",
-      "price": 20.19, 
-      "description": "Bem Gelada"
-    },    
-    { 
-      "id": 3, 
-      "name": "Coca Um", 
-      "img": "assets/img/coca-cola.png",
-      "price": 20.19, 
-      "description": "Bem Gelada"
+    {
+      "id": 5,
+      "name": "Suco de Laranja",
+      "img": "assets/img/produtos/suco-laranja.png",
+      "price": 10.00,
+      "description": "1 Litro"
     },
-    { 
-      "id": 4, 
-      "name": "Coca Um", 
-      "img": "assets/img/coca-cola.png",
-      "price": 20.19, 
-      "description": "Bem Gelada"
+    {
+      "id": 6,
+      "name": "Suco de Maçã Verde",
+      "img": "assets/img/produtos/suco-maca.png",
+      "price": 5.00,
+      "description": "A unidade"
     },
-    { 
-      "id": 5, 
-      "name": "Coca Um", 
-      "img": "assets/img/coca-cola.png",
-      "price": 20.19, 
-      "description": "Bem Gelada"
+    {
+      "id": 7,
+      "name": "Suco de Pêssego",
+      "img": "assets/img/produtos/suco-pessego.png",
+      "price": 5.00,
+      "description": "A unidade"
+    },
+    {
+      "id": 8,
+      "name": "DellValle Uva",
+      "img": "assets/img/produtos/delvalle.png",
+      "price": 6.00,
+      "description": "A unidade"
+    },{
+      "id": 9,
+      "name": "DellVale Pêssego",
+      "img": "assets/img/produtos/dellvale-pessego.png",
+      "price": 6.00,
+      "description": "A unidade"
+    },
+    {
+      "id": 10,
+      "name": "Maçã",
+      "img": "assets/img/produtos/maca.png",
+      "price": 5.00,
+      "description": "O quilo"
+    },
+    {
+      "id": 11,
+      "name": "Laranja",
+      "img": "assets/img/produtos/laranja.png",
+      "price": 4.00,
+      "description": "O quilo"
+    },
+    {
+      "id": 12,
+      "name": "Uva",
+      "img": "assets/img/produtos/uva.png",
+      "price": 6.00,
+      "description": "O quilo"
+    },
+    {
+      "id": 13,
+      "name": "Mamão",
+      "img": "assets/img/produtos/mamao.png",
+      "price": 6.00,
+      "description": "O quilo"
+    },
+    {
+      "id": 14,
+      "name": "Pera",
+      "img": "assets/img/produtos/pera.png",
+      "price": 6.00,
+      "description": "O quilo"
+    },
+    {
+      "id": 15,
+      "name": "Abacate",
+      "img": "assets/img/produtos/abacate.png",
+      "price": 6.00,
+      "description": "O quilo"
     }
-
-  ]    
+  ]
 }
-    
-
-  
-
-
-
