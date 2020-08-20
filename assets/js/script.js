@@ -3,7 +3,10 @@ let modalQt
 
 //Fazendo um "macro" para deixar o código menor..
 const c = el => document.querySelector(el);
-const cs = el => document.querySelector(el);
+const cs = el => document.querySelectorAll(el);
+
+
+// Começo Listagem Mercado
 
 axios.get('http://localhost:3000/mercado')
 
@@ -34,7 +37,7 @@ axios.get('http://localhost:3000/mercado')
             //addEventListener() registra uma única espera de evento em um único alvo
             mercadoItem.querySelector('.mercado-link').addEventListener('click', (e)=>{
                 e.preventDefault();
-                
+
                 modalQt = 1;
 
                let key = e.target.closest('.mercado-item').getAttribute('data-key')
@@ -60,7 +63,42 @@ axios.get('http://localhost:3000/mercado')
        })
     }
  })
+ .catch(err => {
+    console.log('Erro => ' +err)
+})
+// Fim Listagem Mercado
 
+// Começo Modal
+
+function closeModal(){
+    c('.mercadoWindowArea').style.opacity = 0;
+    setTimeout(() => {
+        c('.mercadoWindowArea').style.display = 'none';
+    }, 500);
+}
+//O método forEach() executa uma dada função em cada elemento de um array.
+
+cs('.mercadoInfo--cancelButton, .mercadoInfo--cancelMobileButton').forEach((item) => {
+    item.addEventListener('click', closeModal);
+});
+
+
+c('.mercadoInfo--qtmais').addEventListener('click', ()=>{
+    modalQt++;
+    c('.mercadoInfo--qt').innerHTML = modalQt;
+   
+   
+
+})
+
+c('.mercadoInfo--qtmenos').addEventListener('click', ()=>{
+   
+     if(modalQt > 1){
+        modalQt--;
+        c('.mercadoInfo--qt').innerHTML = modalQt;
+    }
+
+})
 
 
 
@@ -70,9 +108,18 @@ axios.get('http://localhost:3000/mercado')
  
 
 
- .catch(err => {
-     console.log('Erro => ' +err)
- })
+
+
+
+
+
+
+
+
+
+
+
+
 
  const url = "​https://api.postmon.com.br/v1/cep/"
  
