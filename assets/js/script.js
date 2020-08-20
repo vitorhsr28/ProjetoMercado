@@ -47,18 +47,22 @@ axios.get('http://localhost:3000/mercado')
 
  const url = "​https://api.postmon.com.br/v1/cep/"
  
- let cepDigitado = document.getElementById("cep")
- 
- buscaEndereco(cepDigitado)
+ let botao = document.getElementById("buscaCEP")
+
+botao.addEventListener('click', ()=> {
+    let cepDigitado = document.getElementById("cep")
+    buscaEndereco(cepDigitado.value)
+})
+
  function buscaEndereco(cep){
      console.log("Buscando informações do endereço para o cep: " + cep + "...")
  
      const urlComCep = `https://api.postmon.com.br/v1/cep/${cep}`
  axios.get(urlComCep)
      .then(res => {
-         alert(res.data.bairro)
-         alert(data.cidade)
-         alert(data.logradouro)
+         console.log(res)
+         let frete = res.data.bairro === "Jardim Sônia Maria" ? 1 : 1.2
+         console.log(frete * 25)
      })
      .catch(err => {
          alert('Esse CEP nao existe' + err)
