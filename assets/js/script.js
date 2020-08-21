@@ -4,6 +4,8 @@ let modalQt
 //Fazendo um "macro" para deixar o código menor..
 const c = el => document.querySelector(el);
 const cs = el => document.querySelector(el);
+let cart = [];
+let modalKey = 0;
 
 axios.get('http://localhost:3000/mercado')
 
