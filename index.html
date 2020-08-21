@@ -7,11 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/style-cards.css">
-    <link rel="sortcut icon" href="./assets/img/logo shortcut.jpg" type="image/x-icon" />;
-
-    1
-    2
-    <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />;
 
     <title>Mercado</title>
 </head>
@@ -30,24 +25,12 @@
                     <ul>
                         <li class="active"><a href="./index.html">INÍCIO</a></li>
                         <li><a href="./contato.html">CONTATO</a></li>
-                        <li><a href="#">TEST</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn">TEST
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-content">
-                                    <a href="#">TEST1</a>
-                                    <a href="#">TEST2</a>
-                                    <a href="#">TEST3</a>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
 
     <section id="banner">
         <div class="container column">
@@ -56,19 +39,20 @@
                 <h2>Seja bem vindo!</h2>
             </div>
             <div class="banner-options">
-                <a href="">
-                    <div class="banner1">
-                </a>
-                <div class="banner-title">Padaria</div>
-            </div>
-            <div class="banner2">
-                <div class="banner-title">Refrigerantes e sucos</div>
-            </div>
-            <div class="banner3">
-                <div class="banner-title">Hortifruti</div>
-            </div>
+                <div class="banner1">
+                    <div class="banner-title">Padaria</div>
 
-        </div>
+                </div>
+                <div class="banner2">
+                    <div class="banner-title">Refrigerantes e sucos</div>
+
+                </div>
+                <div class="banner3">
+                    <div class="banner-title">Hortifruti</div>
+
+                </div>
+
+            </div>
         </div>
 
     </section>
@@ -103,17 +87,45 @@
             <div class="mercado-area"></div>
         </main>
 
-    </section>
 
+
+        <div class="mercadoWindowArea">
+            <div class="mercadoWindowBody">
+                <div class="mercadoInfo--cancelMobileButton">Voltar</div>
+                <div class="mercadoBig">
+                    <img src="" />
+                </div>
+                <div class="mercadoInfo">
+                    <h1>--</h1>
+                    <div class="mercadoInfo--desc">--</div>
+
+                    <div class="mercadoInfo--pricearea">
+
+                        <div class="mercadoInfo--sector">Preço</div>
+                        <div class="mercadoInfo--price">
+                            <div class="mercadoInfo--actualPrice">R$ --</div>
+                            <div class="mercadoInfo--qtarea">
+                                <button class="mercadoInfo--qtmenos">-</button>
+                                <div class="mercadoInfo--qt">1</div>
+                                <button class="mercadoInfo--qtmais">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mercadoInfo--addButton">Adicionar ao carrinho</div>
+                    <div class="mercadoInfo--cancelButton">Cancelar</div>
+                </div>
+            </div>
+        </div>
+        <div class="mercadoInfo--cepDigitado"><input id="cep" type="text" placeholder="Digite seu CEP"><button
+                id="buscaCEP">Buscar</button></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/db.json"></script>
     <footer class="page-footer font-small green">
         <div class="footer-copyright text-center py-3">© 2020 Copyright
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/db.json"></script>
-    <script src="assets/js/db.js"></script>
 </body>
 
 </html>

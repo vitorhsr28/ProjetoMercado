@@ -64,11 +64,7 @@ h1 {
     width:200px;
     height:200px;
     background-color:#EEE;
-<<<<<<< HEAD
     border-radius:1%;
-=======
-    border-radius:90px;
->>>>>>> vitorhs
     box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
 }
 .mercado-item--img img {
