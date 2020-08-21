@@ -81,7 +81,11 @@ h1 {
     width: 200px;
     height: 200px;
     background-color: #EEE;
+<<<<<<< HEAD
     border-radius: 100px;
+=======
+    border-radius: 15px;
+>>>>>>> vitorhs
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -139,6 +143,7 @@ h1 {
     justify-content: center;
     align-items: center;
     overflow-y: auto;
+<<<<<<< HEAD
 }
 
 .mercadoWindowArea {
@@ -348,4 +353,6 @@ h1 {
 }
 .cart--finalizar:hover {
     background-color:#35af4a;
+=======
+>>>>>>> vitorhs
 }
