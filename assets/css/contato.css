@@ -94,6 +94,7 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .card {
     position: relative;
     max-width: 100%;
@@ -104,6 +105,7 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
     grid-auto-flow: dense;
     gap: 10px;
 }
+
 .card .box {
     padding: 20px;
     display: grid;
@@ -113,24 +115,29 @@ nav .active a, nav a:hover, .dropdown:hover .dropbtn {
     text-align: center;
     transition: 0.5s;
 }
+
 .card .box .foto {
     border-radius: 100px;
     position: relative;
     max-width: 200px;
     margin-bottom: 10px;
 }
+
 .card .logo {
     padding: 5px;
     margin: auto;
     width: 60px;
 }
-.card p{
+
+.card p {
     padding: 5px;
 }
+
 .card .box:hover {
     border: #229b5e solid;
     border-radius: 30px;
 }
+
 footer {
     color: white;
     background: #032126;
